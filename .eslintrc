@@ -1,0 +1,20 @@
+{
+  "extends": ["airbnb","prettier"],
+  rules: {
+    "react/jsx-filename-extension": ['error', { extensions: ['.js', '.jsx'] }],
+    "global-require": "off",
+    "quotes": [ WARN, "single"],
+    "react/prop-types": 0,
+    "prefer-default-export" : 0,
+    "class-methods-use-this" : 0,
+    "react/no-array-index-key" : 0,
+    "no-array-index-key": 0,
+    "react/no-string-refs": 0,
+    "no-restricted-globals": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "semi":0,
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "implicit-arrow-linebreak":0,
+    "react/no-danger":0
+  },
+}
