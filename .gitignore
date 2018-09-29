@@ -6,3 +6,7 @@ yarn-error.log
 # Build directory
 /public
 .DS_Store
+
+# Exclude posts and images - These are mine. ;)
+posts/*
+images/*
