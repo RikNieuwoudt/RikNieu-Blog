@@ -31,6 +31,8 @@ module.exports = {
     },
     'gatsby-transformer-remark',
     'gatsby-plugin-sitemap',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
