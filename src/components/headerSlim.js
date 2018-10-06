@@ -4,8 +4,8 @@ import { Link } from 'gatsby'
 import MediaQuery from 'react-responsive'
 // import rikImgSml from './rikieu-sml.png'
 
-const HeaderSlim = ({ siteTitle, data }) => {
-  console.log('data', data)
+const HeaderSlim = ({ siteTitle }) => {
+  const innerWidth = typeof window !== 'undefined' ? window.innerWidth : 320 // eslint-disable-line
   return (
     <div
       style={{
@@ -18,7 +18,8 @@ const HeaderSlim = ({ siteTitle, data }) => {
         marginBottom: '1.45rem',
         textAlign: 'center',
         width: '100%',
-        height: window.innerWidth <= 375 ? '45px' : '80px',
+        boxShadow: '0px 5px 20px rgba(0,0,0,0.3)',
+        height: innerWidth <= 375 ? '45px' : '80px',
       }}
     >
       <MediaQuery minDeviceWidth={300} maxDeviceWidth={374}>

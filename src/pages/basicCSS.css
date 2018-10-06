@@ -3,6 +3,13 @@ body {
   font-family: 'K2D', Helvetica, Arial, Sans-Serif;
   padding: 0px;
   margin: 0px;
+  background-color: #292c34;
+  color: #a7aeb9;
+}
+
+h1,
+h2 {
+  color: #dde0e5;
 }
 
 .btn {
@@ -14,5 +21,10 @@ body {
   color: white;
   margin: 5px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+a {
+  color: #ba7ed6;
   text-decoration: none;
 }

@@ -7,8 +7,8 @@ export default ({ data }) => {
   const posts = data.allMarkdownRemark.edges
   return (
     <Layout>
-      <div style={{ height: '100vh' }}>
-        <h1>Amazing Pandas Eating Things</h1>
+      <div style={{ minHeight: '100vh' }}>
+        <h1>Blog</h1>
         <h4 id="blog">{data.allMarkdownRemark.totalCount} Posts</h4>
         {posts.map(({ node }) => (
           <Link key={node.id} to={node.fields.slug}>

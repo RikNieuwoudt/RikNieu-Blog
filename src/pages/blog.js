@@ -1,13 +1,41 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 import './basicCSS.css'
 
-export default () => (
-  <Layout slim>
-    <div>
-      <h1>Blog</h1>
-      This is the about page
-    </div>
-  </Layout>
-)
+export default ({ data }) => {
+  const posts = data.allMarkdownRemark.edges
+  return (
+    <Layout slim>
+      <div>
+        <h1>Blog</h1>
+        <h4 id="blog">{data.allMarkdownRemark.totalCount} Posts</h4>
+        {posts.map(({ node }) => (
+          <Link key={node.id} to={node.fields.slug}>
+            <div>{node.frontmatter.title}</div>
+          </Link>
+        ))}
+      </div>
+    </Layout>
+  )
+}
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
