@@ -65,10 +65,10 @@ export default () => {
           </div>
           <br />
           <div>
-            A cronjob runs a nodejs script daily in order to find new jobs from
-            various sources, and stores the latest entries in a database and
-            deleting entries older than a month. Recruites also post jobs via a
-            submitions page.
+            A daily cronjob runs a nodejs script in order to find new jobs from
+            various sources, and stores the results in a database.Entries older
+            than a month get deleted too. Recruiters can also post jobs via a
+            submissions page.
           </div>
         </p>
 
@@ -94,21 +94,19 @@ export default () => {
             https://remotereact.com
           </a>
           <div>
-            RemoteReact was an evolution of Blockchaindevjobs, with an automated
-            post submittions page, where recruiters can pay to get their posts
-            activated instantly.
+            RemoteReact was an evolution of Blockchaindevjobs, where recruiters
+            can pay to get their posts activated instantly on payment.
           </div>
           <br />
           <div>
-            The project is also constructed in a generic way so as to make it
-            generic, so that the same code can be used for other niches by only
-            setting a basic config file.
+            The project was also constructed so that the same code could be used
+            for multiple niches by only adjusting a single config file.
           </div>
           <br />
           <div>
-            I can thus instantly use the same code to create a jobs board for
-            any niche I want; cat groomers, plumbers, potato portrait takers,
-            anything.
+            {`I can thus use the same code to create different jobs boards for any
+            niche I'd want; cat groomers, plumbers, potato portrait takers,
+            anything.`}
           </div>
         </p>
 
@@ -131,23 +129,23 @@ export default () => {
           </a>
           <div>
             This was my first foray into browser extention development. I
-            created browser extentions for both Chrome and Firefox, where you
-            could mine Monero cryptocurrency in your browser.
+            created browser extentions for Chrome and Firefox, which allowed you
+            to mine Monero cryptocurrency in your browser.
           </div>
           <br />
           <div>
-            The extention had a little pop-up window where you could choose your
-            CPU usage level, and where you entered your Monero wallet address.
+            The extention had a little pop-up window where you could set your
+            CPU usage level, and where you set your Monero wallet address.
           </div>
           <br />
           <div>
-            The proceeds from your mining was then paid to your wallet
-            automatically, with 10% being paid to mine.
+            The proceeds from your mining was paid to your wallet automatically,
+            with 10% being paid to mine.
           </div>
           <br />
           <div>
             Sadly, both Chrome and Firefox banned most crypto-related extentions
-            after a couple of months, so this project is retired.
+            within a couple of months, so this project is now retired.
           </div>
           <br />
         </p>
